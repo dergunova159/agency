@@ -1,0 +1,195 @@
+html, body, .root {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body * {
+    box-sizing: border-box;
+    color: inherit;
+    background-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+body div {
+    border: 1px solid black;
+}
+
+body {
+    background-image: url('../images/back.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.root {
+    gap: 10px;
+    position: relative;
+    overflow-y: auto;
+    padding: 0 30px;
+}
+
+.root > div {
+    background-color: #fffcef;
+}
+
+
+
+
+
+.header {
+    height: 100px;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.logo {
+    background-image: url("../images/logo.png");
+    background-size: 100% 100%;
+    width: 90px;
+    height: 80px;
+}
+
+.company {
+    font-size: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+.content {
+    gap: 20px;
+    padding: 10px;
+    height: calc(100% - 200px);
+    overflow: auto;
+    border-radius: 20px 20px;
+}
+
+.content > div {
+    height: 100%;
+    overflow: auto;
+}
+
+.menu {
+    width: 200px;
+    padding: 5px;
+    gap: 10px;
+    background-image: url("../images/sidebar.jpg");
+    background-size: 100% 100%;
+    border-radius: 20px;
+}
+
+.menu .title {
+    text-align: center;
+    font-size: 16px;
+} 
+
+.menu .menu-list {
+    gap: 10px;
+    font-size: 15px;
+}
+
+.menu .menu-item {
+    text-decoration-line: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+} 
+
+.menu .menu-item:hover {
+    background-color: #b17a33;;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu input {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.main {
+    width: calc(100% - 200px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    height: 100px;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.rights {
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.social {
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.social .text {
+    font-size: 20px;
+}
+
+.social .icons {
+    gap: 20px;
+}
+
+.social .icons svg {
+    width: 100%;
+    height: 100%;
+}
+
+.social .icons .icon {
+    width: 35px;
+    height: auto;
+}
+
+.social * {
+    fill: #e37214;
+}
