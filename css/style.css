@@ -14,10 +14,6 @@ body * {
     font-size: 14px;
 }
 
-body div {
-    border: 1px solid black;
-}
-
 body {
     background-image: url('../images/back.jpg');
     background-size: auto 100%;
@@ -134,16 +130,93 @@ body {
 
 .main {
     width: calc(100% - 200px);
+    padding: 10px;
 }
 
 
 
 
 
+.about-container {
+    justify-content: space-evenly;
+}
+
+.about-container iframe {
+    border-radius: 10px;
+}
+
+
+.review-container {
+    gap: 20px;
+}
+
+.review-container .clients {
+    gap: 20px;
+}
+
+.review-container .client-list {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.review-container .clients .title {
+    text-align: center;
+}
+
+.review-container .client-item {
+    width: 50%;
+    align-items: center;
+}
+
+.review-container .client-item img {
+    width: 200px;
+    height: 200px;
+}
+
+.review-action input {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.review-action input:hover {
+    background-color: #b17a33;;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
 
 
+.tours-container {
+    gap: 20px;
+}
+
+.tours-container .search-block {
+    gap: 10px;
+}
+
+.tours-container .inputs {
+    gap: 20px;
+}
+
+.tours-container .inputs input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 5px;
+    width: 150px;
+}
+
+.tours-container .inputs button {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.tours-container .inputs button:hover {
+    background-color: #b17a33;;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
 
