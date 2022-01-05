@@ -2,17 +2,16 @@
     <div class="read-review">
         <div class="title"><h3>Вы можете оставить о нас отзыв</h3></div>
         <div class="review-text">
-            <textarea class="review-input" rows="7" cols="60"></textarea>
+            <textarea id="review-input" rows="7" cols="60"></textarea>
         </div>
         <div class="review-action">
-            <input type="button" value="Сохранить" />
+            <input id="review-btn" type="button" value="Сохранить" />
+            <div class="error-div"></div>
         </div>
     </div>
     <div class="write-review">
         <div class="title"><h3>Последние отзывы</h3></div>
-        <div class="review-list">
-
-        </div>
+        <div class="review-list"></div>
     </div>
     <div class="clients flexCol">
         <div class="title"><h3>Наши знаменитые клиенты</h3></div>
@@ -28,3 +27,4 @@
         </div>
     </div>
 </div>
+<script src="../js/review.js"></script>
