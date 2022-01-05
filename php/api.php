@@ -68,6 +68,8 @@
   }
 
     
+
+  // *** ROUTE
   try {
     $action = $_POST['action'];
     $conn = getConnection($dbHost, $dbUsername, $dbPassword, $dbName);
@@ -76,10 +78,10 @@
         $res = getTours($conn); 
         break;
       case "toursParam": 
-        $res = getByParams($conn, $_POST['startDate'], $_POST['endDate'], $_POST['cost']); 
+        $res = getByParams($conn, htmlentities($_POST['startDate']), htmlentities($_POST['endDate']), htmlentities($_POST['cost'])); 
         break;
       case "addReview":
-        $res = insertReview($conn, $_POST['reviewText']);
+        $res = insertReview($conn, htmlentities($_POST['reviewText']));
         break;
       case "prevReviews":
         $res = getReviews($conn);
